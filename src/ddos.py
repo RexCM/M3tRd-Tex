@@ -14,8 +14,8 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-bytes = random._urandom(1000)
-bytes1 = random._urandom(1000)
+bytes = random._urandom(1000000)
+bytes1 = random._urandom(1000000))
 system = platform.uname()[0]
 
 def cls():
