@@ -33,7 +33,7 @@ elif(op==3):
  os.system("python src/log-ddos.py")
 else:
  print("\033[1;31;40mInvalid input. Reloading Tools!") 
- time.sleep(1.6)
+ time.sleep(1.1)
  os.system("cd")
  os.system("cd Ultra-DDos")
  os.system("python2 main.py")
